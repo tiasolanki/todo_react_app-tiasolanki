@@ -27,8 +27,8 @@ export default function App() {
         defaultValue: 'dark',
         getInitialValueInEffect: true,
     });
-    const toggleColorScheme = (value) =>
-        setColorScheme(value || (colorScheme === 'dark' ? 'light' : 'dark'));
+    const toggleColorScheme = () => setColorScheme('light');
+
 
     const taskTitle = useRef('');
     const taskSummary = useRef('');
